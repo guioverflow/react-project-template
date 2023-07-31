@@ -1,8 +1,12 @@
 import React from 'react';
 
-const DeleteButton = () => {
+interface AddButtonProps {
+  onClick?: () => void;
+}
+
+const DeleteButton: React.FC<AddButtonProps> = ({ onClick }) => {
   return (
-    <button className="btn btn-danger">Remover</button>
+    <button className="btn btn-danger" onClick={onClick}>Remover</button>
   );
 };
 

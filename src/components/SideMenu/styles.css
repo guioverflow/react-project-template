@@ -1,0 +1,20 @@
+.side-menu {
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.side-menu.expanded {
+    width: 300px;
+}
+
+.side-menu.collapsed {
+    width: 100px;
+}
+
+.side-menu > .button {
+
+}
